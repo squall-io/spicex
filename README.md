@@ -2,17 +2,6 @@
 
 From Agadir to Amsterday, from Goa to São Paulo, everything spices :ok_hand:
 
-```shell script
-# install dependencies
-yarn install
-
-# start SpiceX web client
-yarn start
-
-# build the client to production
-yarn build --prod
-```
-
 ## Features
 
 Yet to come :blush:. Please come by in a little while.
@@ -22,6 +11,21 @@ Yet to come :blush:. Please come by in a little while.
 Setup git hooks before you start
 ```shell script
 git config --local core.hooksPath .git-hooks
+```
+
+Install dependencies
+```shell script
+yarn install
+```
+
+Start SpiceX web client
+```shell script
+yarn start
+```
+
+Build the client to production
+```shell script
+yarn build --prod
 ```
 
 ## Contributors
