@@ -1,27 +1,37 @@
-# Spicex
+# SpiceX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+From Agadir to Amsterday, from Goa to São Paulo, everything spices :ok_hand:
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Yet to come :blush:. Please come by in a little while.
 
-## Code scaffolding
+## Dear Developers
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Setup git hooks before you start
+```shell script
+git config --local core.hooksPath .git-hooks
+```
 
-## Build
+Install dependencies
+```shell script
+yarn install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Start SpiceX web client
+```shell script
+yarn start
+```
 
-## Running unit tests
+Build the client to production
+```shell script
+yarn build --prod
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contributors
 
-## Running end-to-end tests
++ [Salathiel Genese](https://salathiel.genese.name) | salathiel@genese.name | Project Owner
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Licence
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Squall.IO All Rights Reserved.
