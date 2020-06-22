@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+set -ex
+
+message="$( cat "$1" )"
+branch="$( git rev-parse --abbrev-ref HEAD )"
+ticket="$( echo "$branch" | grep -Eo '^[A-Z]+-[0-9]+' )"
+
+if test -z "$ticket"; then
+  echo "Sorry, this branch doesn't seem to refer to any Jira ticket: $branch" >&2
+  echo 1
+fi
+
+# shellcheck disable=SC2003
+if ! echo "$message" | grep -Eo '^\[[A-Z]+-[0-9]+\]'; then
+  message="[$ticket] $message"
+fi
+
+echo "$message" > "$1"
+exit
