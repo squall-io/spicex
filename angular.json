@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spicex"
+    }
+  },
+  "defaultProject": "spicex",
+  "cli": {
+    "analytics": "18d18fc4-c0cd-4c71-bb79-055c6a636d69"
+  }
 }
