@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/_theming.scss'
+
+$--fantasy: "Dancing Script", fantasy
+$--serif: "Crimson Pro", sans-serif
+$--sans-serif: Dosis, sans-serif
+$--cursive: Lemonada, cursive
+
+$--display-4:     mat-typography-level(112px, 112px, 300, $--fantasy, $letter-spacing: -0.05em)
+$--display-3:     mat-typography-level(56px,  56px,  300, $--fantasy, $letter-spacing: -0.02em)
+$--display-2:     mat-typography-level(45px,  48px,  300, $--fantasy, $letter-spacing: -0.005em)
+$--display-1:     mat-typography-level(34px,  40px,  300, $--fantasy)
+$--headline:      mat-typography-level(26px,  32px,  900, $--serif)
+$--title:         mat-typography-level(24px,  32px,  700, $--serif)
+$--subheading-2:  mat-typography-level(16px,  28px,  600)
+$--subheading-1:  mat-typography-level(15px,  24px,  600)
+$--body-2:        mat-typography-level(16px,  24px,  500)
+$--body-1:        mat-typography-level(16px,  20px,  500)
+$--caption:       mat-typography-level(14px,  20px,  500)
+$--button:        mat-typography-level(16px,  16px,  900)
+$--input:         mat-typography-level(16px,  16px,  500)
+
+@include mat-core(mat-typography-config($--sans-serif, $--display-4, $--display-3, $--display-2, $--display-1, $--headline, $--title, $--subheading-2, $--subheading-1, $--body-2, $--body-1, $--caption, $--input))
+
+a
+  color: inherit
+  text-decoration: none
+
+.ff\:
+  &cursive
+    font-family: $--cursive
+  &fantasy
+    font-family: $--fantasy
+  &serif
+    font-family: $--serif
+  &sans-serif
+    font-family: $--sans-serif
