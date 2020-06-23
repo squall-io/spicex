@@ -39,6 +39,10 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/core/interceptor/mock.core.interceptor.ts",
+                  "with": "src/core/interceptor/core.interceptor.ts"
                 }
               ],
               "optimization": true,

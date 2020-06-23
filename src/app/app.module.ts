@@ -7,9 +7,10 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarModule } from './nav-bar/nav-bar.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CoreInterceptor } from '../core/interceptor/mock.core.interceptor';
 
-@NgModule({
-  providers: [],
+@NgModule( {
   bootstrap: [
     AppComponent,
   ],
@@ -17,6 +18,13 @@ import { NavBarModule } from './nav-bar/nav-bar.module';
     AppComponent,
     HomeComponent,
     NotFoundComponent,
+  ],
+  providers: [
+    {
+      multi: true,
+      useClass: CoreInterceptor,
+      provide: HTTP_INTERCEPTORS,
+    },
   ],
   imports: [
     NavBarModule,
@@ -34,5 +42,7 @@ import { NavBarModule } from './nav-bar/nav-bar.module';
       },
     ] ),
   ],
-})
-export class AppModule {}
+} )
+export class AppModule
+{
+}
